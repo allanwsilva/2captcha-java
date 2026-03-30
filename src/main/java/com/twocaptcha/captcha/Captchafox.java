@@ -15,4 +15,7 @@ public class Captchafox extends Captcha {
         params.put("pageurl", url);
     }
 
+    public void setApiServer(String apiServer) {
+        params.put("api_server", apiServer);
+    }
 }
