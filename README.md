@@ -48,6 +48,7 @@ Examples of API requests for different captcha types are available on the [Java 
     - [Prosopo](#prosopo)
     - [VK Captcha](#vk-captcha)
     - [VK Image](#vk-image)
+    - [Altchacaptcha](#altchacaptcha)
   - [Other methods](#other-methods)
     - [send / getResult](#send--getresult)
     - [balance](#balance)
@@ -566,6 +567,18 @@ VkCaptcha captcha = new VkCaptcha("vkcaptcha");
 captcha.setRedirectUri("https://id.vk.com/not_robot_captcha?domain=vk.com&session_token=eyJ....HGsc5B4LyvjA&variant=popup&blank=1");
 captcha.setuserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36");
 captcha.setProxy("http", "1.2.3.4");
+```
+
+### Altchacaptcha
+
+<sup>[API method description.](https://2captcha.com/2captcha-api#altchacaptcha)</sup>
+
+Use this method to solve Altcha Captcha and obtain a token to bypass the protection.
+
+```java
+Altchacaptcha captcha = new Altchacaptcha();
+captcha.setChallengeUrl("https://.../captcha/api/altcha/challenge");
+captcha.setPageUrl("https://site.com/");
 ```
 
 ## Other methods
