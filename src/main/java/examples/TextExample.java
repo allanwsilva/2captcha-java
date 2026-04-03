@@ -9,6 +9,7 @@ public class TextExample {
         TwoCaptcha solver = new TwoCaptcha(args[0]);
 
         Text captcha = new Text("If tomorrow is Saturday, what day is today?");
+        captcha.setLang("en");
 
         try {
             solver.solve(captcha);
